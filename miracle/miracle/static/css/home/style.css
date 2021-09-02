@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&family=Ubuntu:ital,wght@0,300;0,400;0,200;0,700;1,300;1,400&display=swap');
+
+@import "../header.css";
+@import "./review.css";
+@import "./section1.css";
+@import "./section2.css";
+
+@font-face {
+    font-family: 'BradleyHand';
+    src: url('../../font/BRADHITC.TTF'); /* IE9 Compat Modes */
+    src: url('../../font/BRADHITC.TTF')  format('truetype'),
+  }
+
+
+:root {
+    /* --primary-hsl: 11,93%,78%; */
+    --primary-hsl: 28,40%,60%;
+    /* --primary-hsl: 33,50%,70%; */
+    /* --primary-hsl: 93,50%,45%; */
+
+    --primary: hsla(var(--primary-hsl),1);
+
+    --secondary-hsl: 0,0%,95%;
+    --secondary: hsla(var(--secondary-hsl),1);
+
+    --tertiary-hsl: 0,0%,15%;
+    --tertiary: hsla(var(--tertiary-hsl),1);
+
+    --ubuntu: 'Ubuntu', sans-serif;
+    --hand: 'BradleyHand','Tangerine', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--ubuntu);
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--secondary);
+}

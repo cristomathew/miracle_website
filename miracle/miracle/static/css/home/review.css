@@ -1,0 +1,215 @@
+.customer {
+  --swiper-theme-color: var(--primary) !important;
+  --swiper-navigation-size: 40px !important;
+  width: 100%;
+  min-height: 75vh;
+  background: var(--secondary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.customer .title {
+  color: var(--tertiary);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.customer .title .underline {
+  position: relative;
+}
+.customer .title .underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--primary);
+}
+
+.customer .review-container {
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+}
+
+.customer .review-container .quote {
+  width: 75%;
+  height: 280px;
+  border-radius: 200px;
+  padding: 0 300px 0 80px;
+
+  background: var(--tertiary);
+  color: var(--secondary);
+
+  transform: translateX(10%);
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  transition: all 0.5s;
+}
+
+.customer .review-container .quote .icon {
+  --primary: hsla(var(--primary-hsl), 0.7);
+
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+.customer .review-container .quote .line {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.customer .review-container .quote .by {
+  --secondary: hsla(var(--secondary-hsl), 0.7);
+  color: var(--secondary);
+}
+
+.customer .review-container .profile {
+  --size: 350px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  overflow: hidden;
+
+  flex-shrink: 0;
+  transform: translateX(-50%);
+
+  background: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customer .review-container .profile .dp {
+  --size: 320px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s;
+}
+.customer .review-container .profile .dp img {
+  width: var(--size);
+  height: var(--size);
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  -webkit-tap-highlight-color: transparent;
+  top: 55% !important;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .customer .review-container .quote {
+    width: 70%;
+    transform: translateX(15%);
+  }
+  .customer .review-container .quote .icon {
+    font-size: 3.5rem;
+  }
+  .customer .review-container .quote .line {
+    font-size: 1rem;
+  }
+  .customer .review-container .quote .by {
+    font-size: 0.9rem;
+  }
+  .customer .review-container .profile {
+    --size: 320px;
+    transform: translateX(-40%);
+  }
+  .customer .review-container .profile .dp {
+    --size: 300px;
+  }
+}
+@media (max-width: 850px) {
+  .customer .review-container .quote {
+    border-radius: 30px;
+    padding: 0 250px 0 50px;
+    transform: translateX(20%);
+  }
+  .customer .review-container .profile {
+    --size: 200px;
+    transform: translateX(-60%);
+  }
+  .customer .review-container .profile .dp {
+    --size: 185px;
+  }
+}
+
+@media (max-width: 700px) {
+  .customer .title {
+    font-size: 2rem;
+    margin-bottom: -60px;
+  }
+  .customer .title .underline::after {
+    bottom: -6px;
+    height: 4px;
+  }
+  .customer .review-container {
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+  }
+  .customer .review-container .quote {
+    width: 300px;
+    border-radius: 20px;
+    padding: 30px;
+    transform: translateX(0);
+    gap: 10px;
+  }
+  .customer .review-container .profile {
+    --size: 120px;
+    transform: translateY(50%);
+  }
+  .customer .review-container .profile .dp {
+    --size: 110px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+@media (max-width: 310px) {
+  .customer .review-container .quote {
+    width: 100%;
+    border-radius: 0px;
+    padding: 30px;
+    transform: translateX(0);
+    gap: 10px;
+  }
+}
+@media (max-height: 600px) {
+  .customer .title {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+  .customer .review-container {
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+}
