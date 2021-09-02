@@ -24,6 +24,10 @@
     height: 270px;
     border-radius: 20px;
     background: hsla(var(--primary-hsl),0.7);
+    transition: transform 0.3s;
+}
+.section-2 .display .card:hover{
+    transform: scale(1.05);
 }
 
 .section-2 .main-msg{
@@ -88,9 +92,27 @@
 
 }
 .section-2 .main-msg .para a{
+    position: relative;
     text-decoration: none;
     color: var(--primary);
     font-size: 0.95rem;
+}
+.section-2 .main-msg .para a::after{
+    position: absolute;
+    content: '';
+    border-radius: 2px;
+    height: 2px;
+    width: 75px;
+    bottom: -2px;
+    left: 0;
+    transform-origin: right;
+    transform: scale(0,1);
+    background: var(--primary);
+    transition: transform 0.3s;
+}
+.section-2 .main-msg .para a:hover::after{
+    transform-origin: left;
+    transform: scale(1,1);
 }
 
 .section-2-img{
