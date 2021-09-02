@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../miracle/static/css/home/style.css">
+    <link href="{% static 'css/home/style.css' %}" rel="stylesheet">
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
+
     <title>Home</title>
+
 </head>
 <body>
+
+
 
     <header>
         <a href="#" class="logo">Miracle Living</a>
@@ -88,7 +94,7 @@
           </div>
           <div class="profile">
             <div class="dp">
-              <img src="../miracle/static/img/home/lady2.png" alt="" />
+              <img src="{% static 'img/home/lady2.png' %}" alt="" />
             </div>
           </div>
         </div>
@@ -107,7 +113,7 @@
           </div>
           <div class="profile">
             <div class="dp">
-              <img src="../miracle/static/img/home/man2.png" alt="" />
+              <img src="{% static 'img/home/man2.png' %}" alt="" />
             </div>
           </div>
         </div>
@@ -126,7 +132,7 @@
           </div>
           <div class="profile">
             <div class="dp">
-              <img src="../miracle/static/img/home/lady3.png" alt="" />
+              <img src="{% static 'img/home/lady3.png' %}" alt="" />
             </div>
           </div>
         </div>
@@ -139,7 +145,7 @@
 
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="../miracle/static/js/main.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 </html>
