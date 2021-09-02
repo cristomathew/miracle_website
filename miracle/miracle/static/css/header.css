@@ -243,6 +243,10 @@ header .enquire-btn i{
         font-size: 1.3rem;
     }
     header .enquire-btn{
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+        
         left: initial;
         right: 10px;
     }
