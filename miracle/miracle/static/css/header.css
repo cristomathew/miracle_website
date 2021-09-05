@@ -13,6 +13,7 @@ header{
     align-items: center;
     justify-content: space-between;
 
+
     z-index: 10;
 }
 
@@ -65,7 +66,7 @@ header .menu{
 }
 
 header .menu .items{
-    font-size: 1rem;
+    font-size: 1.05rem;
     cursor: pointer;
     text-decoration: none;
     user-select: none;
@@ -102,7 +103,7 @@ header .enquire-btn{
     padding: 15px 20px;
     border-radius: 50px;
 
-    font-size: 1rem;
+    font-size: 1.05rem;
     letter-spacing: 0.5px;
     text-decoration: none;
     font-weight: 500;
@@ -228,6 +229,10 @@ header .enquire-btn i{
     header .enquire-btn i{
         display: block;
     }
+    header .menu-btn:hover, header .enquire-btn:hover{
+        background: var(--secondary);
+        color: var(--primary);
+    }
 }
 
 /* 400px max width devices */
@@ -242,7 +247,12 @@ header .enquire-btn i{
         left: 10px;
         font-size: 1.3rem;
     }
+
     header .enquire-btn{
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+
         left: initial;
         right: 10px;
     }
@@ -272,11 +282,12 @@ header .enquire-btn i{
 }
 @keyframes menu-close{
     0%{
-        opacity: 1;
         transform: scaleY(1);
     }
+    20%{
+        transform: scaleY(1.2);
+    }
     100%{
-        opacity: 0;
         transform: scaleY(0);
    }
  }

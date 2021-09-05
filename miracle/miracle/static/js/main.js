@@ -7,6 +7,7 @@ let menuOpen = false;
 
 menuBtn.addEventListener('click',()=>{
     if(menuOpen===false){
+        document.body.style.overflow = "hidden";
         menu.classList.add('active');
         menuBtn.querySelector('i').classList.replace("fa-bars","fa-times");
         menu.style.animation = "menu-open 0.7s ease-in-out both";
@@ -14,6 +15,7 @@ menuBtn.addEventListener('click',()=>{
     }
     else
     {
+        document.body.style.overflow = "initial";
         menuBtn.querySelector('i').classList.replace("fa-times","fa-bars");
         menu.style.animation = "menu-close 0.6s ease-in-out both";
         setTimeout(()=>{
@@ -44,4 +46,23 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+
+// Show more
+
+let morePara = document.querySelectorAll(".section-2 .main-msg .para .more-para");
+let readMoreBtn = document.querySelector(".section-2 .main-msg .para .more-info-btn");
+let moreToggle = false;
+
+readMoreBtn.addEventListener('click',()=>{
+  if(!moreToggle){
+    morePara.forEach(p => p.style.display = "block" );
+    readMoreBtn.innerHTML = "Show less";
+  }
+  else{
+    morePara.forEach(p => p.style.display = "none" );
+    readMoreBtn.innerHTML = "Read More";
+  }
+  moreToggle=!moreToggle;
 });

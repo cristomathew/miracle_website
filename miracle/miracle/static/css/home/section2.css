@@ -16,9 +16,11 @@
 .section-2 .display{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
 .section-2 .display .card{
     width: 270px;
     height: 270px;
@@ -31,7 +33,7 @@
 }
 
 .section-2 .main-msg{
-    height: 220px;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,8 +65,9 @@
     background: var(--primary);
 }
 .section-2 .main-msg .divide{
+    align-self: flex-start;
     width: 3px;
-    height: 100%;
+    height: 200px;
     border-radius: 5px;
     background: hsla(var(--primary-hsl),0.4);
 }
@@ -88,16 +91,23 @@
 }
 
 .section-2 .main-msg .para p{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: hsla(var(--tertiary-hsl),0.9);
 
 }
-.section-2 .main-msg .para a{
+.section-2 .main-msg .para .more-para{
+    display: none;
+}
+
+
+.section-2 .main-msg .para .more-info-btn{
     position: relative;
-    text-decoration: none;
     color: var(--primary);
     font-size: 0.95rem;
+    transition: all 0.5s;
+    cursor: pointer;
 }
-.section-2 .main-msg .para a::after{
+.section-2 .main-msg .para .more-info-btn::after{
     position: absolute;
     content: '';
     border-radius: 2px;
@@ -110,7 +120,7 @@
     background: var(--primary);
     transition: transform 0.3s;
 }
-.section-2 .main-msg .para a:hover::after{
+.section-2 .main-msg .para .more-info-btn:hover::after{
     transform-origin: left;
     transform: scale(1,1);
 }
@@ -121,6 +131,7 @@
     background-image: url('../../img/home/img2.png');
     background-size: cover;
     background-position: 50% center;
+    margin-bottom: 50px;
 }
 
 
@@ -139,9 +150,60 @@
         border-radius: 10px;
     }
     .section-2 .main-msg{
+        gap: 70px;
+    }
+    .section-2 .main-msg .para p span{
+        font-size: 1.3rem;
+    }
+    .section-2 .main-msg .para p{
+        font-size: 0.9rem;
+    }
+    .section-2 .main-msg .para .more-info-btn{
+        font-size: 0.9rem;
+    }
+    
+    .section-2-img{
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        background-position: 48% center;
+    }
+}
+
+@media (max-width: 1300px){
+    .section-2 .display{
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
+
+
+@media (max-width: 1250px){
+    .section-2{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .section-2 .main-msg .para{
+        box-sizing: border-box;
+        padding-right: 10%;
+        /* width: 90%; */
+    }
+    
+}
+@media (max-width: 1050px){
+    .section-2 .main-msg .divide{
+        display: none;
+    }
+    
+}
+@media (max-width: 950px){
+    .section-2{
+        padding-right: 30px;
+    }
+    .section-2 .main-msg{
         height: 80%;
         flex-direction: column;
-        gap: 70px;
+        justify-content: space-around;
     }
     .section-2 .main-msg .title{
         text-align: center;
@@ -155,22 +217,11 @@
         width: 90%;
         gap: 20px;
     }
-    .section-2 .main-msg .para p span{
-        font-size: 1.3rem;
-    }
-    .section-2 .main-msg .para p{
-        font-size: 0.9rem;
-    }
-    .section-2 .main-msg .para a{
-        font-size: 0.9rem;
-    }
-    
-    .section-2-img{
-        width: 100%;
-        background-image: url('../../img/home/img2.png');
-        background-size: 1000px;
-        background-repeat: no-repeat;
-        background-position: 48% center;
+}
+
+@media (max-width: 700px){
+    .section-2 .main-msg{
+        gap: 80px;
     }
 }
 

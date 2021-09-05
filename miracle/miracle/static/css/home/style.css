@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&family=Ubuntu:ital,wght@0,300;0,400;0,200;0,700;1,300;1,400&display=swap');
 
 @import "../header.css";
+@import "../footer.css";
 @import "./review.css";
 @import "./section1.css";
 @import "./section2.css";
+@import "./section3.css";
 
 @font-face {
     font-family: 'BradleyHand';
@@ -11,6 +13,57 @@
     src: url('../../font/BRADHITC.TTF')  format('truetype'),
   }
 
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../font/Ubuntu-Regular.ttf'); /* IE9 Compat Modes */
+    src: url('../../font/Ubuntu-Regular.ttf')  format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../font/Ubuntu-Light.ttf'); /* IE9 Compat Modes */
+    src: url('../../font/Ubuntu-Light.ttf')  format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../font/Ubuntu-Bold.ttf'); /* IE9 Compat Modes */
+    src: url('../../font/Ubuntu-Bold.ttf')  format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../font/Ubuntu-Medium.ttf'); /* IE9 Compat Modes */
+    src: url('../../font/Ubuntu-Medium.ttf')  format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../font/Ubuntu-LightItalic.ttf'); /* IE9 Compat Modes */
+    src: url('../../font/Ubuntu-LightItalic.ttf')  format('truetype');
+    font-weight: light;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../font/Ubuntu-BoldItalic.ttf'); /* IE9 Compat Modes */
+    src: url('../../font/Ubuntu-BoldItalic.ttf')  format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../font/Ubuntu-MediumItalic.ttf'); /* IE9 Compat Modes */
+    src: url('../../font/Ubuntu-MediumItalic.ttf')  format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+  
 
 :root {
     /* --primary-hsl: 11,93%,78%; */
@@ -41,4 +94,22 @@
 body{
     min-height: 100vh;
     background-color: var(--secondary);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+::-webkit-scrollbar-thumb {
+    background: hsla(var(--primary-hsl),0.7);
+    transition: 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }

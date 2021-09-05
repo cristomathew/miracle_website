@@ -28,12 +28,12 @@
 
 .section-1 .main-msg{
     z-index: 2;
-    width: 520px;
+    width: 500px;
     height: 350px;
-    padding: 0 6%;
-    border-radius: 20px 180px 20px 180px;
+    padding: 0 50px;
+    border-radius: 20px 150px;
 
-    transform: translate(-10%,-15%);
+    transform: translate(-10%,-20%);
     transition: all 0.5s;
 
     background: hsla(var(--primary-hsl),0.8);
@@ -48,8 +48,11 @@
 }
 
 .section-1 .main-msg .title{
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 2.2rem;
+}
+.section-1 .main-msg p{
+    font-size: 1.05rem;
 }
 
 .section-1 .main-msg .btn{
@@ -102,31 +105,32 @@
         overflow: initial;
     }
     .section-1 .main-msg{
-        width: 400px;
-        height: 300px;
-        border-radius: 30px;
-
+        width: 350px;
+        height: 280px;
+        border-radius: 20px 50px;
+        gap: 20px;
         transform: translate(0,30%);
 
     }
     .section-1 .main-msg .title{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .section-1 .main-msg .btn{
         font-size: 0.8rem;
         width: 180px;
         justify-content: center;
+        align-self: center;
     }
 }
 
 @media (max-width:450px){
     .section-1 .main-msg{
-        width: 320px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         border-radius: 20px;
         padding: 10px 20px;
 
-        transform: translate(0,32%) scale(0.9);
+        /* transform: translate(0,32%); */
 
     }
 }

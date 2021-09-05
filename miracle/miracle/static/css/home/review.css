@@ -10,6 +10,8 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+
+  margin-bottom: 100px;
 }
 .customer .title {
   color: var(--tertiary);
@@ -116,6 +118,13 @@
   height: var(--size);
   object-fit: cover;
 }
+
+/* .customer .review-container .quote {
+  transform: translateX(15%);
+}
+.customer .review-container .profile {
+  transform: translateX(-25%);
+} */
 
 .swiper-button-prev,
 .swiper-button-next {
