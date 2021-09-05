@@ -66,3 +66,32 @@ readMoreBtn.addEventListener('click',()=>{
   }
   moreToggle=!moreToggle;
 });
+
+
+// Section 3 dropdown
+
+
+let designCard = document.querySelectorAll("footer .container .design");
+
+
+for(let i=0; i<designCard.length; i++){
+
+  let current = designCard[i].querySelector(".expand-btn");
+  let toggle = false;
+  let designItems = designCard[i].querySelectorAll(".items");
+  current.addEventListener('click',()=>{
+    if(!toggle){
+      designItems.forEach(item => item.style.display="block");
+      current.innerHTML = "-";
+      current.style.fontSize = "1.8rem";
+      current.style.transform = "translate(-50%,10%) rotate(180deg)";
+    }
+    else{
+      designItems.forEach(item => item.style.display="none");
+      current.innerHTML = "+";
+      current.style.fontSize = "1.5rem";
+      current.style.transform = "translate(-50%,10%) rotate(0deg)";
+    }
+    toggle=!toggle;
+  });
+}
