@@ -167,8 +167,9 @@ footer .container .design .expand-btn{
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: hsla(var(--secondary-hsl),0.1);
-  transition: all 0.2s ease-in-out;
+   color: hsla(var(--secondary-hsl),0.8);
+   background: hsla(var(--secondary-hsl),0.1);
+   transition: all 0.2s ease-in-out;
 
   display: flex;
   align-items: center;
