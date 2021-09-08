@@ -1,2 +1,2 @@
-postgres_user = 'miracleuser'
-postgres_password = 'testing@123'
+postgres_user = 'postgres'
+postgres_password = 'katti403'
