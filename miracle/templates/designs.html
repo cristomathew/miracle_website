@@ -17,12 +17,12 @@
         <i class="fas fa-bars"></i>
       </div>
       <div class="menu">
-        <a href="{% url 'design' %}" class="items active">Our Designs</a>
-        <a href="#" class="items">Display Homes</a>
-        <a href="#" class="items">Inclusions</a>
+        <a href="{% url 'designs' %}" class="items active">Our Designs</a>
+        <a href="{% url 'displayhomes' %}" class="items">Display Homes</a>
+        <a href="{% url 'inclusions' %}" class="items">Inclusions</a>
 
         <!-- Connect to home page -->
-        <a href="./home.html" class="items">Build with us</a>
+        <a href="{% url 'home' %}" class="items">Build with us</a>
 
         <a href="#" class="items">News & Media</a>
         <a href="#" class="items">Connect</a>
@@ -127,7 +127,7 @@
           Experience our miraculous quality from the comfort of your own
           livingroom with an onlne virtual 3D tour
         </p>
-        <a href="#" class="btn">View our display homes</a>
+        <a href="{% url 'displayhomes' %}" class="btn">View our display homes</a>
       </div>
     </div>
 

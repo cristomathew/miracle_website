@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Title';
+  src: url('../../font/South\ Castle.ttf'); /* IE9 Compat Modes */
+  src: url('../../font/South\ Castle.ttf')  format('truetype'),
+}
+
+.section-2{
+    min-height: 80vh;
+    padding: 50px 200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-2 .heading{
+    color: var(--tertiary);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.section-2 .para{
+  color: var(--tertiary);
+  font-size: 1.1rem;
+  margin: 0.2rem 0 2rem;
+}
+
+.section-2 .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 840px){
+    .section-2{
+        padding: initial;
+        padding: 30px 0;
+    }
+    .section-2 .heading{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .section-2 .para{
+      text-align: center;
+      font-size: 1rem;
+      margin: 0rem 0px 1rem;
+      padding: 0px 50px;
+}
+    .section-2 .card-container {
+        justify-content: center;
+    }
+}
+
+.section-2 .card-container .card {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 20px 0 40px;
+  font-family: var(--ubuntu);
+  width: 320px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--secondary);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1),
+    -3px -3px 6px rgba(255, 255, 255, 1);
+
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.3rem;
+  transition: color 0.3s, background-color 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-2 .card-container .card .image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2 .card-container .card .title {
+  font-size: 2.5rem;    
+  font-family: 'Title';
+  line-height: 3rem;
+  width: 90%;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-2 .card-container .card .sub {
+  width: 90%;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.section-2 .card-container .card .buy-btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: 3px solid var(--primary);
+  transition: all 0.3s;
+}
+
+.section-2 .card-container .card .buy-btn:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.section-2 .card-container .card .image i {
+  font-size: 4rem;
+}
