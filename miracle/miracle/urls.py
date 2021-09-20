@@ -21,5 +21,7 @@ urlpatterns = [
     path('',include('home.urls')),
     path('',include('designs.urls')),
     path('',include('inclusions.urls')),
-    path('',include('displayhomes.urls'))
+    path('',include('displayhomes.urls')),
+    path('',include('connect.urls')),
+    path('',include('new_media.urls'))
 ]

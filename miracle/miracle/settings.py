@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'designs.apps.DesignsConfig',
     'inclusions.apps.InclusionsConfig',
-    'displayhomes.apps.DisplayhomesConfig'
+    'displayhomes.apps.DisplayhomesConfig',
+    'connect.apps.ConnectConfig',
+    'new_media.apps.NewMediaConfig'
 
 
 ]
