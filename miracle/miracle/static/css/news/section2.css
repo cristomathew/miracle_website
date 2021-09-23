@@ -1,0 +1,188 @@
+.section-2 {
+  min-height: 70vh;
+  width: 100%;
+  padding: 100px 150px 70px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+
+  background: var(--secondary);
+}
+
+@media (min-width: 1200px){
+  .section-2{
+  padding: 100px 200px 70px;
+  position: relative;
+    align-items: flex-start;
+  }
+  .section-2::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 500px;
+    background: url(../../img/news.svg) no-repeat;
+    background-position: 250px 25%;
+    background-size: 40%;
+  }
+}
+
+.section-2 .card {
+  width: 600px;
+  min-height: 300px;
+  border-radius: 10px;
+  color: var(--tertiary);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+
+  padding: 50px 0 30px;
+}
+
+.section-2 .card .image {
+  position: relative;
+  width: 40%;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-2 .card .text {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 50px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2 .card .image img {
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.section-2 .card .image .date {
+  position: absolute;
+  top: 0;
+  left: 130%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 60px;
+  border-radius: 100px;
+  background: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-weight: bold;
+  z-index: 2;
+}
+.section-2 .card .text .title {
+  color: var(--tertiary);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
+.section-2 .card .text .para {
+  color: var(--tertiary);
+}
+.section-2 .card .text .para p{
+  margin-bottom: 5px;
+}
+
+.section-2 .card .text .para .more-para {
+  display: none;
+}
+
+.section-2 .card .text .para .more-info-btn {
+  position: relative;
+  color: var(--primary);
+  font-size: 0.95rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.section-2 .card .text .para .more-info-btn::after {
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  height: 2px;
+  width: 70px;
+  bottom: -2px;
+  left: 0;
+  transform-origin: right;
+  transform: scale(0, 1);
+  background: var(--primary);
+  transition: transform 0.3s;
+}
+.section-2 .card .text .para .more-info-btn:hover::after {
+  transform-origin: left;
+  transform: scale(1, 1);
+}
+
+
+@media (max-width: 800px) {
+    .section-2 {
+        padding: 100px 10px 50px;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+      
+        background: var(--secondary);
+      }
+  .section-2 .card {
+    width: 340px;
+    min-height: 300px;
+  padding: initial;
+  flex-direction: column;
+  }
+  .section-2 .card .image {
+    width: 100%;
+  }
+  .section-2 .card .text {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px 20px;
+  }
+
+  .section-2 .card .image img {
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    transform: translateY(10%);
+    object-fit: cover;
+  }
+  .section-2 .card .image .date {
+    top: 0;
+    left: initial;
+    transform: translateY(-50%);
+    width: 60%;
+    height: 60px;
+  }
+  .section-2 .card .text .title {
+    color: var(--tertiary);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .section-2 .card .text .para {
+    color: var(--tertiary);
+  }
+}
+
+@media (max-width: 330px) {
+    .section-2 .card {
+      width: 300px;
+    }
+}
