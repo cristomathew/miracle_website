@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+@import "../header.css";
+@import "../footer.css";
+@import "./review.css";
+@import "./section1.css";
+@import "./section2.css";
+
+@font-face {
+    font-family: 'BradleyHand';
+    src: url('../../font/BRADHITC.TTF'); /* IE9 Compat Modes */
+    src: url('../../font/BRADHITC.TTF')  format('truetype'),
+  }
+
+  
+:root {
+    /* --primary-hsl: 11,93%,78%; */
+    --primary-hsl: 28,40%,60%;
+    /* --primary-hsl: 33,50%,70%; */
+    /* --primary-hsl: 93,50%,45%; */
+
+    --primary: hsla(var(--primary-hsl),1);
+
+    --secondary-hsl: 0,0%,95%;
+    --secondary: hsla(var(--secondary-hsl),1);
+
+    --tertiary-hsl: 0,0%,15%;
+    --tertiary: hsla(var(--tertiary-hsl),1);
+
+    --ubuntu: 'Work Sans', sans-serif;
+    --hand: 'BradleyHand','Merienda', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--ubuntu);
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--secondary);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+::-webkit-scrollbar-thumb {
+    background: hsla(var(--primary-hsl),0.7);
+    transition: 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
