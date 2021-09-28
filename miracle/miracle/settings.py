@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'inclusions.apps.InclusionsConfig',
     'displayhomes.apps.DisplayhomesConfig',
     'connect.apps.ConnectConfig',
-    'new_media.apps.NewMediaConfig'
+    'new_media.apps.NewMediaConfig',
+    'buildwithus.BuildwithusConfig'
 
 
 ]

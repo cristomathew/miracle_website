@@ -23,5 +23,6 @@ urlpatterns = [
     path('',include('inclusions.urls')),
     path('',include('displayhomes.urls')),
     path('',include('connect.urls')),
-    path('',include('new_media.urls'))
+    path('',include('new_media.urls')),
+    path('',include('buildwithus.urls'))
 ]
