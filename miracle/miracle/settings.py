@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'displayhomes.apps.DisplayhomesConfig',
     'connect.apps.ConnectConfig',
     'new_media.apps.NewMediaConfig',
-    'buildwithus.BuildwithusConfig'
+    'buildwithus.apps.BuildwithusConfig'
 
 
 ]
