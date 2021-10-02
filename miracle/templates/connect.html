@@ -1,1 +1,200 @@
-connect
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{% static 'css/connect/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Miracle Living</title>
+  </head>
+  <body>
+    <header>
+      <a href="{% url 'home' %}" class="logo">Miracle Living</a>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="menu">
+        <a href="{% url 'designs' %}" class="items active">Our Designs</a>
+        <a href="{% url 'displayhomes' %}" class="items">Display Homes</a>
+        <a href="{% url 'inclusions' %}" class="items">Inclusions</a>
+
+        <!-- Connect to home page -->
+        <a href="{% url 'home' %}" class="items">Build with us</a>
+
+        <a href="{% url 'news' %}"class="items">News & Media</a>
+        <a href="{% url 'connect' %}"class="items">Connect</a>
+      </div>
+      <a href="#" class="enquire-btn">
+        <div class="text">Enquire Now</div>
+        <i class="far fa-phone"></i>
+      </a>
+    </header>
+
+    <div class="section-1"></div>
+
+    <div class="section-2">
+      <div class="left-container">
+        <h1 class="title">We are Happy to help you !</h1>
+        <div class="form-container">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email Address" />
+          <input type="text" placeholder="Phone" />
+          <input type="text" placeholder="State" />
+          <input type="text" placeholder="Current Suburb" />
+          <input type="text" placeholder="Post Code" />
+          <input type="text" placeholder="Building Location" />
+          <input type="text" placeholder="How did you hear about us ?" />
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="image"></div>
+
+        <div class="contact">
+          <h1 class="title">Contact</h1>
+          <div class="detail">
+            <div class="main">Phone</div>
+            <div class="sub">1300 500 400</div>
+          </div>
+          <div class="detail">
+            <div class="main">Fax</div>
+            <div class="sub">(02) 4000 6000</div>
+          </div>
+          <div class="detail">
+            <div class="main">Head Office</div>
+            <div class="sub">10 Sovereign Place, South Windsor, 2756</div>
+          </div>
+        </div>
+
+        <div class="hours">
+          <h1 class="title">Hours</h1>
+          <div class="detail">
+            <div class="main">Office Opening Hours</div>
+            <div class="sub">Monday - Friday : 8.30AM - 5PM</div>
+          </div>
+          <div class="detail">
+            <div class="main">Display Home Hours</div>
+            <div class="sub">Monday - Sunday : 10AM - 5PM</div>
+            <div class="sub">Or by appointment</div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5532.0049135669615!2d151.21200001450015!3d-33.85910491823105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae665e892fdd%3A0x3133f8d75a1ac251!2sSydney%20Opera%20House!5e0!3m2!1sen!2sin!4v1633150117036!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+
+    <div class="section-3">
+      <div class="main-msg">
+        <h1 class="title">Designing and Building your dream home</h1>
+        <p>
+          Experience our miraculous quality from the comfort of your own
+          livingroom with an onlne virtual 3D tour
+        </p>
+        <a href="{% url 'displayhomes' %}" class="btn">View our display homes</a>
+      </div>
+    </div>
+
+    <div class="section-4">
+      <div class="contact-card-container">
+        <div class="contact-card">
+          <div class="card-logo">
+            <h1>Miracle Living</h1>
+          </div>
+          <h1 class="title">Building Together For Generations</h1>
+          <p>
+            We would love for you to join our Miracle Family. Enter your details
+            below to join our mailing list!
+          </p>
+          <div class="form-container">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email Address" />
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+        <div class="contact-image"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="design">
+          <div class="title">Our Designs</div>
+          <div class="expand-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="items">Single Storey</div>
+          <div class="items">Double Storey</div>
+          <div class="items">Narrow Lot Designs</div>
+          <div class="items">Acreage Home</div>
+          <div class="items">Dual Living</div>
+          <div class="items">Duplex</div>
+          <div class="items">Granny Flat</div>
+          <div class="items">Split Level</div>
+        </div>
+        <div class="design">
+          <div class="title">Inclusions</div>
+          <div class="expand-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="items">Pack 1</div>
+          <div class="items">Pack 2</div>
+        </div>
+        <div class="design">
+          <div class="title">Build with us</div>
+          <div class="expand-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="items">Our Process</div>
+          <div class="items">Where we build</div>
+        </div>
+        <div class="design contact">
+          <div class="title">Connect</div>
+          <div class="expand-btn">
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="items main">Phone</div>
+          <div class="items">123-456-789</div>
+          <div class="items main">Office</div>
+          <div class="items">10 Sovereign Place, South Windsor, 2756</div>
+          <div class="items main">Email</div>
+          <div class="items">abrahamquaresh@gmail.com</div>
+        </div>
+        <div class="social">
+          <a href="#" target="_blank" class="social-btn">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" target="_blank" class="social-btn">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" class="social-btn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" target="_blank" class="social-btn">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+        </div>
+      </div>
+      <div class="credits">
+        <div class="logo">MIRACLE LIVING</div>
+        <div class="claim">&copy; Copyright 2021 Miracle Living</div>
+        <div class="docs">
+          <a href="#">Privacy Policy </a>
+          <span> | </span>
+          <a href="#"> Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{% static 'js/page1.js' %}"></script>
+  </body>
+</html>
