@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Title";
+  src: url("../../font/South\ Castle.ttf"); /* IE9 Compat Modes */
+  src: url("../../font/South\ Castle.ttf") format("truetype");
+}
+
+.section-2 {
+  min-height: 80vh;
+  padding: 100px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 100px;
+}
+
+.section-2 .left-container {
+  width: 700px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-2 .right-container {
+  width: 300px;
+  min-height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.section-2 .map {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 13%;
+  height: 400px;
+}
+
+.section-2 .left-container .title {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.section-2 .left-container .form-container {
+  width: 90%;
+  min-height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  gap: 25px;
+}
+.section-2 .left-container .form-container input {
+  width: 300px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 3px solid var(--primary);
+  border-radius: 4px;
+  outline: none;
+
+  padding-left: 10px;
+  transition: border 0.3s;
+}
+.section-2 .left-container .form-container textarea {
+  width: 100%;
+  min-height: 220px;
+  max-height: 300px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 3px solid var(--primary);
+  border-radius: 4px;
+  outline: none;
+
+  padding: 10px;
+  transition: border 0.3s;
+  resize: vertical;
+}
+.section-2 .left-container .form-container input:focus {
+  border: 3px solid hsla(var(--tertiary-hsl), 0.8);
+}
+.section-2 .left-container .form-container textarea:focus {
+  border: 3px solid hsla(var(--tertiary-hsl), 0.8);
+}
+.section-2 .left-container .form-container input[type="submit"] {
+  background-color: hsla(var(--primary-hsl), 0.8);
+  color: var(--tertiary);
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-left: initial;
+  transition: background-color 0.3s;
+}
+.section-2 .left-container .form-container input[type="submit"]:hover {
+  background-color: var(--primary);
+}
+
+.section-2 .right-container .image {
+  width: 100%;
+  border-radius: 5px;
+  height: 200px;
+  background: url("https://media.istockphoto.com/photos/misty-morning-sunrise-sunlight-rays-through-fog-tree-branches-nature-picture-id108315651?b=1&k=20&m=108315651&s=170667a&w=0&h=YTSUmF_-4wAr5WPKXPtegjEezJooZCYVbpmipz6A7Fg=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-2 .right-container .contact {
+  width: 100%;
+  min-height: 200px;
+}
+.section-2 .right-container .contact .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.section-2 .right-container .contact .detail {
+  margin-bottom: 10px;
+  width: 60%;
+}
+.section-2 .right-container .contact .detail .main {
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.section-2 .right-container .hours {
+  width: 100%;
+  min-height: 200px;
+}
+.section-2 .right-container .hours .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.section-2 .right-container .hours .detail {
+  margin-bottom: 10px;
+}
+.section-2 .right-container .hours .detail .main {
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+@media (max-width: 940px) {
+  .section-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-2 .right-container {
+    order: 1;
+  }
+  .section-2 .left-container {
+    order: 2;
+    width: 100%;
+    min-height: 50vh;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-2 .left-container .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .section-2 .left-container .form-container {
+    width: 90%;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+  .section-2 .left-container .form-container input {
+    width: 100%;
+  }
+  .section-2 .left-container .form-container textarea {
+    width: 100%;
+    min-height: 150px;
+    max-height: 300px;
+  }
+  .section-2 .map {
+    order: 3;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: 300px;
+  }
+}
